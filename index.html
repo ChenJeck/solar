@@ -1,0 +1,159 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>太阳系官网</title>
+<link rel="icon" href="img/logo.ico" type="images/x-ico" />
+<style type="text/css">
+<!--
+*{margin:0px; padding:0px}
+#banner{; position:absolute; right:0%}
+#banner ul{；display:inline-block; position:fixed; background-color:#FFF; background-color:rgba(255,255,255,0); z-index:20; top:10px}
+#banner ul li{float:left;margin:1px; background-size:10%;list-style:none;}
+img.dh:hover{ background-color:rgba(255,255,255,0.2); width:85%;}
+div.dh{margin:0 auto;}
+#gg{position:fixed; top:65%; left:78%; z-index:100}
+#contect{
+	position:absolute;width:100%; font-family:"zt1";text-align:center; color:#3FF; overflow:hidden;}
+@font-face {
+font-family:zt1;
+src:url(fonts/dionisia.ttf);
+}
+@font-face {
+font-family:xx;
+src:url(fonts/xx.ttf);
+}
+font.js{ font-family:xx, Geneva, sans-serif; font-size:24px; color:#FFF}
+img{ display:none}
+font{display:none}
+#jr img{ display:none}
+#dl{ position:fixed; z-index:100; left:40%;}
+#dhk{display:none; position:fixed; top:60%; left:80%}
+-->
+</style>
+<script type="text/javascript" src="js/jquery-3.4.1.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("img").fadeIn(20000);
+	})
+$(document).ready(function(){
+	$("font").fadeIn(20000);
+	})
+</script>
+    <script language="javascript">
+	var s=0;
+	var j=0;
+	var m=140;
+	var d=800;
+	var msg=new Array("欢迎","来到","太阳系","please","go!");
+	function changemessage(){
+		if(j>=msg.length)
+		{txt.innerHTML='go!';
+		return true;
+		}
+		txt=document.getElementById("contect");
+		txt.innerHTML=msg[j];
+		s=0;
+		zoomTxt();
+		j++;
+		setTimeout("changemessage()",d);
+		}
+		function zoomTxt(){
+			if(s<m){
+				txt.style.fontSize=s+"px";
+				s+=5;
+				setTimeout("zoomTxt()",30);
+				}
+			}
+		</script>
+    <script language="javascript">
+	var str ="太阳系是以太阳为中心，和所有受到太阳的引力约束天体的集合体。包括八大行星（由离太阳从近到远的顺序：水星、金星、地球、火星、木星、土星、天王星、海王星）、以及至少173颗已知的卫星、5颗已经辨认出来的矮行星和数以亿计的太阳系小天体,和哈雷彗星。广义上，太阳系的领域包括太阳，四颗像地球的内行星，由许多小岩石组成的小行星带，四颗充满气体的巨大外行星和充满冰冻小岩石被称为柯伊伯带的小天体区。其中目前太阳系有八大行星，分别是水星，金星，地球，火星，木星，土星，天王星，海王星。太阳系中的八大行星都位于差不多同一平面的近圆轨道上运行，朝同一方向绕太阳公转。除金星以外，其他行星的自转方向和公转方向相同。彗星的绕日公转方向大都相同，多数为椭圆形轨道，一般公转周期比较长。轨道环绕太阳的天体被分为三类：行星、矮行星和太阳系小天体。太阳系中的行星是环绕太阳且质量够大的天体。这类天体：有足够的质量使本身的形状成为球体；有能力清空邻近轨道的小天体。不是行星的卫星，或者是非恒星的天体.太阳系中能称为大行星的天体有8个：水星、金星、地球、火星、木星、土星、天王星、海王星。";
+	var sLen=str.length;
+	var i=0;
+	var flag=1;
+	function neon(){
+		i++;
+		i=(i>=sLen)?0:i;
+		i=(i<0)?(sLen-1):i;
+		tyx.innerHTML=str.substring(0,i-2)+
+"<font color='#F3F' style='display:inline'>"+str.substring(i-2,i-1)+"</font>"
++
+"<font color='#F6F' style='display:inline'>"+str.substring(i-1,i)+"</font>"
++
+"<font color='#F9F' style='display:inline'>"+str.substring(i,i+1)+"</font>"
++
+"<font color='#FCF' style='display:inline'>"+str.substring(i+1,i+2)+"</font>"
++
+"<font color='#F0F' style='display:inline'>"+str.substring(i+2,i+3)+"</font>"
+str.substring(i+3,sLen);
+	}
+	setInterval("neon()",100);
+    function dhk(){
+	document.getElementById('dhk').style.display="inline";
+	}
+	function dhkgb(){
+	document.getElementById('dhk').style.display="none";
+		}
+	</script>
+</head>
+<body onload="changemessage();" background="images/timg.gif">
+<div id="banner" style="margin:-10px auto; width:1000px;">
+<ul style="z-index:9999">
+<li><a href="#bg"><img src="images/sy.png" class="dh" width="80%"/></a></li><li><a href="#xq"><img src="images/xq1.png" class="dh" width="80%"/></a></a></li><li><a href="#xx"><img src="images/xx1.png" class="dh" width="80%"/></a></a></li><li><a href=# onClick="javascript:window.open('dl.html','','width=632,height=388,toolbar=no,status=no,menubar=no,resizable=no,scrollbars=no,top=200px,left=600px,location=yes,status=no');return false;"><img src="images/dl1.png" class="dh" width="80%"/></a></a></li>
+</ul>
+</div>
+<div id="bg">
+<a href="#xz">
+<img src="images/jinru.gif"  style="width:30%; height:50%; position:absolute; left:35%; top:40%; z-index:10"/></a>
+<img src="images/bg2.jpg" width="100%" height="100%"/>
+</div>
+<div id="contect" style="position:absolute; top:40%; z-index:11;"></div>
+<br><br><br>
+<div id="xz">
+<br /><br /><br /><br />
+<img src="images/xz.png" width="300" style=" position:absolute;left:40%"/><br /><br /><br /><br /><br /><br /><br /><br />
+<table border="0" align="center" cellpadding="10px" style="text-align:center">
+<tr><td><img src="images/1.jpg" width="500" height="300"/><br /><font class="js">介绍文本</font></td><td><img src="images/2.jpg" width="500" height="300"/><br /><font class="js">介绍文本</font></td><td><img src="images/3.jpg" width="500" height="300"/><br /><font class="js">介绍文本</font></td></tr>
+<tr><td><img src="images/4.jpg" width="500" height="300"/><br /><font class="js">介绍文本</font></td><td><img src="images/5.jpg" width="500" height="300"/><br /><font class="js">介绍文本</font></td><td><img src="images/6.jpg" width="500" height="300"/><br /><font class="js">介绍文本</font></td></tr>
+</table>
+</div>
+<br /><br /><br /><br />
+<div id="xq">
+<img src="images/xq.png" width="300" style=" position:absolute;left:40%; z-index:110"/><br /><br /><br /><br /><br /><br />
+<img src="images/ty1.png" width="1000" style="position:absolute; left:30%; z-index:10" />
+<br /><br /><br /><br /><br /><br />
+<img src="images/ty.gif"  width="470" style="opacity:0.4; position:absolute; left:10%"/>
+<br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<img src="images/mx1.png" width="1000" style="position:absolute; left:30%; z-index:10" />
+<br /><br /><br /><br /><br /><br />
+<img src="images/mx.gif" width="700" style="opacity:0.4; position:absolute; left:3%;"/>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<img src="images/hx1.png" width="1000" style="position:absolute; left:30%; z-index:10" />
+<br /><br /><br /><br /><br /><br /><br /><br />
+<img src="images/hx.gif" width="430" style="opacity:0.4; position:absolute; left:13%;"/>
+</div>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br />
+<img id="xx" src="images/xx.png" width="300" style=" position:absolute;left:40%; z-index:300"/>
+<img src="images/tyx.gif" style="width:100%;opacity:0.7" />
+<div id="tyx" style="color:#FFF; font-size:40px">
+</div>
+<div id="dhk">
+<img src="images/gb.png"  width="20px"/ style="position:absolute; left:85%; top:4%" onclick="dhkgb()">
+<img src="images/dhk.png" width="200px" style="z-index:220"/>
+</div>
+<div id="gg">
+<a onclick="dhk()">
+<img src="images/dq.gif" onclick="dhk()"/>
+</a>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br />
+<embed src="http://other.web.rw01.sycdn.kuwo.cn/resource/n2/9/89/3726692223.mp3" hidden="true" autostart="true" loop="true" width="50%" style="display:none">
+<div>
+<img src="images/db.png" height="150px" style="position:absolute; width:100%"/>
+<br /><br />
+<font style="text-align:center; color:#FFF; font-size:20px; z-index:1000">备案号 </font>
+</div>
+</body>
+</html>
